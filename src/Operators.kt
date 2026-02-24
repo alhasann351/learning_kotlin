@@ -66,4 +66,27 @@ fun main() {
 
     //Logical NOT
     println(!(num1 < num2))
+
+    println()
+    println("Unary Operators:")
+
+    //Unary Plus
+   println(+num1)
+
+    //Unary Minus
+    println(-num1)
+
+    //Increment
+    var x = 10
+    x++
+    println(x)
+
+    //Decrement
+    var y = 20
+    y--
+    println(y)
+
+    //Logical NOT
+    var flag = false
+    println(!flag)
 }
