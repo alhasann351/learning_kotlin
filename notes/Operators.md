@@ -15,4 +15,7 @@ Relational Operator -
 
 Increment & Decrement Operator → 
 
-Logical Operator → 
+Logical Operator -
+1. AND (&&) → Logical AND if both are true → (10 < 20 && 20 > 5) true
+2. OR (||) → Logical OR at least one is true → (10 == 10 || 20 < 10) true
+3. NOT (!) → Logical NOT invert the result → !(10 > 20) true

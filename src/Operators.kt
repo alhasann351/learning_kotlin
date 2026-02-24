@@ -2,6 +2,8 @@ fun main() {
     var num1 = 10
     var num2 = 20
 
+    println()
+    println("Arithmetic Operators:")
     //Addition
     var total = num1 + num2
     println(total)
@@ -27,7 +29,13 @@ fun main() {
     var modulus = num1 % num2
     println(modulus)
 
+    println()
+    println("Variable print in one line:")
+
     println("num1 + num2 = ${num1 + num2}")
+
+    println()
+    println("Relational Operators:")
 
     //Equal to
     println(num1 == num2)
@@ -46,4 +54,16 @@ fun main() {
 
     //Less than or equal to
     println(num1 <= num2)
+
+    println()
+    println("Logical Operators:")
+
+    //Logical AND
+    println(num1 == num2 && num1 < num2)
+
+    //Logical OR
+    println(num1 < num2 || num1 == num2)
+
+    //Logical NOT
+    println(!(num1 < num2))
 }
