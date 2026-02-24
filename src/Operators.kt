@@ -28,4 +28,22 @@ fun main() {
     println(modulus)
 
     println("num1 + num2 = ${num1 + num2}")
+
+    //Equal to
+    println(num1 == num2)
+
+    //Not equal to
+    println(num1 != num2)
+
+    //Greater than
+    println(num1 > num2)
+
+    //Less than
+    println(num1 < num2)
+
+    //Greater than or equal to
+    println(num1 >= num2)
+
+    //Less than or equal to
+    println(num1 <= num2)
 }
