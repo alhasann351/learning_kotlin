@@ -20,6 +20,14 @@ Unary Operators -
 4. Decrement (--) → y--
 5. Logical NOT (!) → !flag
 
+Assignment Operators-
+1. Assignment (=) → (x = 10)
+2. Addition Assignment (+=) → (x += 5)
+3. Subtraction Assignment (-=) →	(x -= 3)
+4. Multiplication Assignment (*=) → (x *= 2)
+5. Division Assignment (/=) → (x /= 4)
+6. Modulo Assignment (%=) → (x %= 3)
+
 Logical Operators -
 1. AND (&&) → Logical AND if both are true → (10 < 20 && 20 > 5) true
 2. OR (||) → Logical OR at least one is true → (10 == 10 || 20 < 10) true

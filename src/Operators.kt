@@ -89,4 +89,31 @@ fun main() {
     //Logical NOT
     var flag = false
     println(!flag)
+
+    println()
+    println("Assignment Operators:")
+
+    //Assignment
+    var a = 10
+    println(a)
+
+    //Addition Assignment
+    a+=5
+    println(a)
+
+    //Subtraction Assignment
+    a-=10
+    println(a)
+
+    //Multiplication Assignment
+    a*=10
+    println(a)
+
+    //Division Assignment
+    a/=10
+    println(a)
+
+    //odulo Assignment
+    a%=5
+    println(a)
 }
