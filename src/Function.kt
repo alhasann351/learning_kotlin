@@ -1,4 +1,5 @@
 import jdk.incubator.vector.Float16.multiply
+import javax.naming.Name
 
 fun main() {
     add()
@@ -8,6 +9,7 @@ fun main() {
     println("Multiplication: $multi")
     val multi2 : Int = mul(5, 2)
     println("Multiplication: $multi2")
+    namedDefault(name = "Hasan", age = 18)
 }
 
 fun add() {
@@ -27,4 +29,8 @@ fun sub() : Int {
 fun mul(a: Int, b: Int) : Int {
     val c : Int = a * b
     return c
+}
+
+fun namedDefault(name: String, age: Int = 0) {
+    println("Name: $name, Age: $age")
 }
