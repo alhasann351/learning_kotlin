@@ -31,4 +31,51 @@ fun main() {
     for ((index, name) in names.withIndex()) {
         println("Index: $index-> Name: $name")
     }
+
+    println()
+    println("Jump Statements Break:")
+
+    for (i in 1..10) {
+        if (i == 3) {
+            println("Break value: $i")
+            break
+        }
+        println(i)
+    }
+
+    println()
+    println("Jump Statements Continue:")
+
+    for (i in 1..10) {
+        if (i == 5) {
+            println("Continue value: $i")
+            continue
+        }
+        println(i)
+    }
+
+    println()
+    println("Jump Statements Return:")
+
+    val personName : Array<String> = arrayOf("Hasan", "Rakib", "Kamal", "Hasan", "Kamal")
+    personName.forEach {
+        if (it == "Hasan") {
+            return@forEach
+        }
+        println(it)
+    }
+
+    println()
+    println("Jump Statements Return Break:")
+
+    val value : Array<Any> = arrayOf("Rakib", 'K', 10, true)
+    run value@{
+        value.forEach {
+            if (it == 10) {
+                return@value
+            }
+            println(it)
+        }
+    }
+
 }
