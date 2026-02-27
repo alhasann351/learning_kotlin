@@ -106,7 +106,7 @@ fun main () {
     cHouse.gPHInfo()
 }*/
 
-class BankAccount {
+/*class BankAccount {
     private var balance : Double = 0.0
     private var accountHolderName : String = ""
 
@@ -141,4 +141,35 @@ fun main () {
     println("Account Holder Name: ${bankAccount.getAccountHolderName()}")
     bankAccount.setBalance(12.0)
     println("Balance: ${bankAccount.getBalance()}")
+}*/
+
+abstract class Vehicle {
+    abstract fun engine ()
+
+    fun horn () {
+        println("Peep Peep")
+    }
+}
+
+class Car : Vehicle() {
+    override fun engine() {
+        println("Car Engine")
+    }
+}
+
+class Bike : Vehicle() {
+    override fun engine() {
+        println("Bike Engine")
+    }
+}
+
+fun main () {
+    val car = Car()
+    val bike = Bike()
+
+    car.engine()
+    car.horn()
+
+    bike.engine()
+    bike.horn()
 }
