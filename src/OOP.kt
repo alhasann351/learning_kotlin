@@ -143,7 +143,7 @@ fun main () {
     println("Balance: ${bankAccount.getBalance()}")
 }*/
 
-abstract class Vehicle {
+/*abstract class Vehicle {
     abstract fun engine ()
 
     fun horn () {
@@ -172,4 +172,30 @@ fun main () {
 
     bike.engine()
     bike.horn()
+}*/
+
+open class Animal {
+    open fun sound () {
+        println("not sound")
+    }
+}
+
+class Dog : Animal () {
+    override fun sound() {
+        println("Dog sound")
+    }
+}
+
+class Cat : Animal () {
+    override fun sound() {
+        println("Cat sound")
+    }
+}
+
+fun main () {
+    val animal1 : Animal = Dog()
+    val animal2 : Animal = Cat()
+
+    animal1.sound()
+    animal2.sound()
 }
