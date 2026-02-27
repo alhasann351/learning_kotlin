@@ -35,7 +35,7 @@ fun main() {
     strudent2.info()
 }*/
 
-class Car {
+/*class Car {
     var model: String
     var color: String
 
@@ -60,4 +60,48 @@ fun main () {
 
     val car2 = Car(model = "My Car 2", color = "Yellow")
     car2.info()
+}*/
+
+open class GPHouse {
+    var houseNumber = 1
+    var houseName = "GPHouse"
+
+    open fun gPHInfo () {
+        println("GPHInfo: $houseNumber, $houseName")
+    }
+}
+
+open class PHouse : GPHouse() {
+    init {
+        houseNumber = 2
+        houseName = "PHouse"
+    }
+
+    override fun gPHInfo() {
+        println("PHInfo: $houseNumber, $houseName")
+    }
+}
+
+class CHouse (types : String) : PHouse() {
+    var type = types
+
+    init {
+        houseNumber = 4
+    }
+
+    override fun gPHInfo() {
+        super.gPHInfo()
+        println("$houseNumber, $type")
+    }
+}
+
+fun main () {
+    /*var gpHouse = GPHouse()
+    gpHouse.gPHInfo()
+
+    var pHouse = PHouse()
+    pHouse.gPHInfo()*/
+
+    var cHouse = CHouse(types = "Child House")
+    cHouse.gPHInfo()
 }
