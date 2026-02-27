@@ -1,4 +1,6 @@
-class Student {
+
+
+/*class Student {
     var name : String = ""
     var age : Int = 0
 
@@ -17,4 +19,45 @@ fun main () {
     student2.name = "Kamal"
     student2.age = 50
     student2.printStudentInfo()
+}*/
+
+/*class Strudent (val name: String, val age: Int) {
+
+    fun info () {
+        println("Name: $name Age: $age")
+    }
+}
+
+fun main() {
+    var strudent1 = Strudent("Ama", 18)
+    var strudent2 = Strudent("Nma", 32)
+    strudent1.info()
+    strudent2.info()
+}*/
+
+class Car {
+    var model: String
+    var color: String
+
+    constructor(model: String) {
+        this.model = model
+        this.color = "No color"
+    }
+
+    constructor(model: String, color: String) {
+        this.model = model
+        this.color = color
+    }
+
+    fun info () {
+        println("Car info: $model color: $color")
+    }
+}
+
+fun main () {
+    val car = Car(model = "My Car")
+    car.info()
+
+    val car2 = Car(model = "My Car 2", color = "Yellow")
+    car2.info()
 }
