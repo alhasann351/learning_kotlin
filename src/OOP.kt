@@ -62,7 +62,7 @@ fun main () {
     car2.info()
 }*/
 
-open class GPHouse {
+/*open class GPHouse {
     var houseNumber = 1
     var houseName = "GPHouse"
 
@@ -104,4 +104,41 @@ fun main () {
 
     var cHouse = CHouse(types = "Child House")
     cHouse.gPHInfo()
+}*/
+
+class BankAccount {
+    private var balance : Double = 0.0
+    private var accountHolderName : String = ""
+
+    fun setBalance(amount : Double) {
+        if(amount > 0) {
+            balance += amount
+        }else {
+            println("Something went wrong")
+        }
+    }
+
+    fun getBalance() : Double {
+        return balance
+    }
+
+    fun setAccountHolderName(name: String) {
+        if (accountHolderName.isEmpty()) {
+            accountHolderName = name
+        }else {
+            println("Account Holder Name is empty")
+        }
+    }
+
+    fun getAccountHolderName() : String {
+        return accountHolderName
+    }
+}
+
+fun main () {
+    val bankAccount = BankAccount()
+    bankAccount.setAccountHolderName("Hasan")
+    println("Account Holder Name: ${bankAccount.getAccountHolderName()}")
+    bankAccount.setBalance(12.0)
+    println("Balance: ${bankAccount.getBalance()}")
 }
